@@ -1,0 +1,11 @@
+  "name": "jQueryBugLink extension",
+  ...
+  "content_scripts": [
+    {
+      "matches": ["http://github.com/jquery/jquery/commit/*"],
+      "js": ["jquery-1.4.1.js", "myscript.js"]
+    }
+  ],
+  ...
+}
+
