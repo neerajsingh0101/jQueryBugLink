@@ -10,8 +10,14 @@ $(function() {
 			return;
 		}
 
-		var matches = text.match(/#\d{4}/g);
-		if (!matches) {
+		var matches = [],
+		regex = /#(\d+)/g;
+
+		while ((match = regex.exec(text)) !== null) {
+			matches.push(match[1]);
+		}
+
+		if (!matches.length) {
 			return;
 		}
 
