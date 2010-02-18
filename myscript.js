@@ -1,5 +1,5 @@
 //http://github.com/jquery/jquery/commit/da966573c3f3cb083c48cd3ead88e7542937d4df
-function($) {
+$(function() {
 
 	var $elem = $('#commit .group .envelope .human .message pre');
 	var text = $elem.text();
@@ -31,5 +31,5 @@ function($) {
 
 	});
 
-} (jQuery);
+} ());
 
